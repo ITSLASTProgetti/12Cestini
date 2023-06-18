@@ -1,0 +1,12 @@
+id,amenity,name,opening_hours,operator,operator:type,recycling:cans,recycling:glass,recycling:plastic,recycling_type,wheelchair,xcoord,ycoord
+node/2327243948,waste_basket,Raccolta Differenziata,,,,,,,,,10.7089527,45.4576264
+node/2327243953,waste_basket,Raccolta Differenziata,,,,,,,,,10.7085822,45.4565433
+node/2327244002,waste_basket,Raccolta Differenziata,,,,,,,,,10.707,45.457643
+node/4230020403,waste_basket,,,,,,,,,,10.6980256,45.4531783
+node/4230021521,waste_basket,,,,,,,,,,10.7007073,45.4562314
+node/4230021523,waste_basket,,,,,yes,yes,yes,,,10.6998395,45.4553204
+node/4230021528,waste_basket,,,,,yes,yes,yes,,,10.7019355,45.4566346
+node/4295233810,waste_basket,,,,,,,,,,10.7019691,45.4561988
+node/10786827316,waste_basket,,,,,,,,,,10.7855964,45.4604097
+node/10938096830,waste_basket,,,,,,,,,,10.7090404,45.456782
+way/1056174427,recycling,Ecocentro Sandrà,"Oct 01-Mar 31 Mo,We 14:00-18:00, Oct 01-Mar 31 Tu,Fr 08:00-12:00, Oct 01-Mar 31 Sa 08:30-12:00,13:30-17:00; Apr 01-Sep 30 Mo,We,Sa 15:00-19:00, Apr 01-Sep 30 Tu,Fr 08:00-12:00, Apr 01-Sep 30 Sa 08:30-12:00",Comune di Sandrà,government,,,,centre,yes,10.7842688922566,45.466971976757

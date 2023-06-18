@@ -1,0 +1,42 @@
+id,amenity,name,opening_hours,operator,recycling:PET,recycling:aluminium,recycling:cans,recycling:cardboard,recycling:gas_bottles,recycling:glass,recycling:glass_bottles,recycling:green_waste,recycling:organic,recycling:paper,recycling:plastic,recycling:plastic_bottles,recycling:plastic_packaging,recycling:scrap_metal,recycling:waste,recycling_type,wheelchair,xcoord,ycoord
+way/269078040,recycling,,,,,,,,,,,,,,,,,,,container,,10.7326892678703,45.5083128029955
+way/772234568,recycling,,,,,,,,,,,,,,,,,,,centre,,10.7230795278711,45.4810338615084
+node/746668825,recycling,,,,,,,,,,,,,,,,,,,container,,10.7216703,45.4787438
+node/958293124,recycling,,,,,,,,,,,,,,,,,,,container,,10.7341493,45.5017678
+node/1815639220,recycling,,,,,,,,,,,,,,,,,,,container,,10.735263,45.4985587
+node/1815639223,recycling,,Mo-Su 07:00-23:00,,,,,yes,,yes,yes,,,yes,yes,,,yes,,container,limited,10.7340591,45.4997482
+node/2322204017,waste_basket,Raccolta Differenziata,,,,,,,,,,,,,,,,,,,,10.7133064,45.4573025
+node/2450720348,waste_basket,,,,,,,,,,,,,,,,,,,,,10.7323459,45.4959331
+node/2452229422,recycling,,,Camping Spiaggia d'Oro,,,yes,,,,yes,,,yes,,yes,,,,container,,10.7359081,45.4972014
+node/4321843758,recycling,,,,,,,,,,,,,,,,,,,container,,10.7149055,45.4642359
+node/5759457507,recycling,,"08:00-22:00; PH open",,yes,yes,yes,yes,,,yes,,,yes,yes,yes,yes,,yes,container,,10.7276352,45.4845932
+node/5764496003,recycling,,"08:00-22:00;PH open",,yes,,,,,,yes,yes,,yes,,,,,yes,container,,10.7308346,45.4839734
+node/6722561105,recycling,,,,,,,,,,yes,,yes,yes,yes,,,,,container,,10.7347789,45.49004
+node/6724597613,recycling,,,,,,,,yes,,,,,yes,,,,,,container,,10.7335719,45.4912004
+node/6724661296,recycling,,,,yes,yes,,yes,,,yes,,,,yes,yes,yes,,yes,container,,10.7299259,45.4932022
+node/6724733912,recycling,,,,,,,,,,yes,,yes,yes,yes,,,,,container,,10.7302676,45.492223
+node/6904892765,recycling,,"08:00-22:00;PH open",,yes,yes,,,,,yes,,,yes,yes,yes,yes,,yes,container,,10.7289635,45.4839827
+node/6904892766,recycling,,"08:00-22:00;PH open",,yes,yes,,,,,yes,,,yes,yes,yes,yes,,yes,container,,10.7270661,45.483935
+node/6904892769,recycling,,"08:00-22:00;PH open",,yes,,,,,,yes,,,yes,yes,yes,yes,,yes,container,,10.7264988,45.4841325
+node/6904892775,recycling,,"08:00-22:00;PH open",,yes,yes,,,,,yes,,,yes,yes,yes,yes,,yes,container,,10.7260337,45.4838305
+node/7661150420,waste_basket,,,,,,,,,,,,,,,,,,,,,10.7266466,45.4842801
+node/7775431136,recycling,,,Camping Spiaggia d'Oro,,,yes,,,,yes,,,yes,,yes,,,,container,,10.7336992,45.4974269
+node/7775431138,recycling,,,,,,yes,,,,yes,,,yes,,yes,,,,container,,10.7381567,45.4963306
+node/7775431142,recycling,,,Camping Spiaggia d'Oro,,,yes,,,,yes,,,yes,,yes,,,,container,,10.7360539,45.4972048
+node/9114967181,recycling,,,,,,,,,,,,yes,,yes,,,,,container,,10.7333516,45.4911488
+node/9116122671,recycling,,,,,,,,,,yes,,yes,yes,yes,,,,,container,,10.7322371,45.4946549
+node/9116122672,recycling,,,,,,,,,,yes,,yes,yes,yes,,,,,container,,10.7321647,45.4928626
+node/9714143651,waste_basket,,,,,,,,,,,,,,,,,,,,,10.7518269,45.4712705
+node/9937253960,waste_basket,,,,,,,,,,,,,,,,,,,,,10.7329331,45.4973383
+node/9937253963,waste_basket,,,,,,,,,,,,,,,,,,,,,10.7330289,45.4977735
+node/9957635658,waste_basket,,,,,,,,,,,,,,,,,,,,,10.747261,45.4723764
+node/9990178721,recycling,,Mo-Su 07:00-23:00,,,yes,yes,yes,,,yes,,,yes,yes,yes,yes,,yes,container,yes,10.7333066,45.501213
+node/10162337695,waste_basket,,,,,,,,,,,,,,,,,,,,,10.7307683,45.5064372
+node/10162339257,waste_basket,,,,,,,,,,,,,,,,,,,,,10.7313619,45.5092283
+node/10162355359,waste_basket,,,,,,,,,,,,,,,,,,,,,10.7313291,45.5095497
+node/10162378355,waste_basket,,,,,,,,,,,,,,,,,,,,,10.7313977,45.5084327
+node/10162388822,waste_basket,,,,,,,,,,,,,,,,,,,,,10.7321963,45.5064353
+node/10162400517,waste_basket,,,,,,,,,,,,,,,,,,,,,10.7308794,45.5068146
+node/10253168080,recycling,,,,,,,,,,yes,,,,,,,,,container,,10.7453211,45.4995837
+node/10921562241,waste_basket,,,,,,,,,,,,,,,,,,,,,10.722256,45.4636393
+node/10921562243,waste_basket,,,,,,,,,,,,,,,,,,,,,10.7221145,45.4634438

@@ -1,0 +1,5 @@
+id,amenity,recycling:aluminium,recycling:cans,recycling:glass,recycling_type,xcoord,ycoord
+way/677439212,recycling,,,,centre,10.8730768509247,45.4867789870548
+node/896958517,recycling,yes,yes,yes,container,10.8660288,45.4859844
+node/2754508036,waste_basket,,,,,10.8905148,45.4773668
+node/5485318614,waste_basket,,,,,10.8797586,45.4837884
