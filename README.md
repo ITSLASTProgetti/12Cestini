@@ -43,3 +43,35 @@ fare un bot/sito web che avendo la posizione dell'utente riesca a printare una t
 - javaScript
 - Google
 - Youtube
+
+#
+
+*20/06/2023*
+
+### **idea finale**
+
+fare un bot telegram con le seguenti funzionalità:
+- scrivere le cordinate del cestino più vicino all'utente.
+- scrivere le cordinate del cestino facendo selezionare dall'utente il tipo del cestino a qui vuole arrivare 
+
+
+### **informazioni progetto**
+
+- python
+- librerie bot telegram
+- libreria per ordinare le tabelle
+- libreria per prendere la posizione dell'utente
+
+
+| cosa fare | tempo | strumenti | librerie |
+|---|---|---|---|
+| trasformare i file .csv in .db | 1 ora| google ||
+| riordinare le tabelle | 1 ora | google, python |pandas|
+| creazione del bot | 15 min | google ||
+| trovare la posizione dell'utente in cordinate | 2 ore | google, python ||
+| prendere la posizione dalla tabella dei cestini | 2 ora | google, python ||
+| trovare modo per riordinare le cordinate più vicine alle cordinate dell'utente | 4 ore | google, python ||
+| trovare modo per filtrarli per tipo di cestino | 1 ora | google, python ||
+| scrivere su telegra la posizione del cestino più vicino | 30 min |google, python ||
+
+#
