@@ -1,4 +1,4 @@
-id,amenity,barrier,check_date,check_date:recycling,name,operator,recycling:batteries,recycling:cans,recycling:cartons,recycling:clothes,recycling:glass,recycling:glass_bottles,recycling:green_waste,recycling:paper,recycling:paper_packaging,recycling:plastic,recycling:plastic_bottles,recycling:plastic_packaging,recycling:scrap_metal,recycling:small_appliances,recycling_type,waste,website,xcoord,ycoord
+id,amenity,barrier,check_date,check_date:recycling,name,operator,recycling:batteries,recycling:cans,recycling:cartons,recycling:clothes,recycling:glass,recycling:glass_bottles,recycling:green_waste,recycling:paper,recycling:paper_packaging,recycling:plastic,recycling:plastic_bottles,recycling:plastic_packaging,recycling:scrap_metal,recycling:small_appliances,recycling_type,waste,website,lon,lat
 way/204509620,recycling,,,,Ecocentro Quaderni,,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,yes,centre,,http://www.comune.villafranca.vr.it/nqcontent.cfm?a_id=1511,10.8007068582639,45.3263958489814
 way/275238251,recycling,,,,,,,,,,,,,,,,,,,,centre,,,10.9188510459203,45.3723068210634
 way/349863811,recycling,,,,,,,,,,,,,,,,,,,,centre,,,10.9176632629851,45.3962222724411

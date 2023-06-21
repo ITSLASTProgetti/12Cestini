@@ -1,7 +1,7 @@
-id,amenity,name,opening_hours,operator,operator:type,recycling:cans,recycling:glass,recycling:plastic,recycling_type,wheelchair,xcoord,ycoord
+id,amenity,name,opening_hours,operator,operator:type,recycling:cans,recycling:glass,recycling:plastic,recycling_type,wheelchair,lon,lat
 node/2327243948,waste_basket,Raccolta Differenziata,,,,,,,,,10.7089527,45.4576264
 node/2327243953,waste_basket,Raccolta Differenziata,,,,,,,,,10.7085822,45.4565433
-node/2327244002,waste_basket,Raccolta Differenziata,,,,,,,,,10.707,45.457643
+node/2327244002,waste_basket,Raccolta Differenziata,,,,,,,,,10707,45.457643
 node/4230020403,waste_basket,,,,,,,,,,10.6980256,45.4531783
 node/4230021521,waste_basket,,,,,,,,,,10.7007073,45.4562314
 node/4230021523,waste_basket,,,,,yes,yes,yes,,,10.6998395,45.4553204
