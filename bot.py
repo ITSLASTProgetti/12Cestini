@@ -35,16 +35,16 @@ async def help(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def setlocation(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [[InlineKeyboardButton("bussolengo", url='http://umap.openstreetmap.fr/it/map/bussolengo_931583?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true'),
-                 InlineKeyboardButton("castelnuovo", url=''),
-                 InlineKeyboardButton("lazise", url='')],
-                [InlineKeyboardButton("mozzecane", url=''),
-                 InlineKeyboardButton("pastrengo", url=''),
-                 InlineKeyboardButton("pescantina", url='')],
-                [InlineKeyboardButton("sommacampagna", url=''),
-                 InlineKeyboardButton("sona", url=''),
-                 InlineKeyboardButton("valeggio", url='')],
-                [InlineKeyboardButton("vigasio", url=''),
-                 InlineKeyboardButton("villafranca", url='')]]
+                 InlineKeyboardButton("castelnuovo", url='http://umap.openstreetmap.fr/it/map/castelnuovo_931665?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true'),
+                 InlineKeyboardButton("lazise", url='http://umap.openstreetmap.fr/it/map/lazise_931666?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true')],
+                [InlineKeyboardButton("mozzecane", url='http://umap.openstreetmap.fr/it/map/mozzecane_931667?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true'),
+                 InlineKeyboardButton("pastrengo", url='http://umap.openstreetmap.fr/it/map/pastrengo_931668?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true'),
+                 InlineKeyboardButton("pescantina", url='http://umap.openstreetmap.fr/it/map/pescantina_931670?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true')],
+                [InlineKeyboardButton("sommacampagna", url='http://umap.openstreetmap.fr/it/map/sommacampagna_931671?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true'),
+                 InlineKeyboardButton("sona", url='http://umap.openstreetmap.fr/it/map/sona_931672?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true'),
+                 InlineKeyboardButton("valeggio", url='http://umap.openstreetmap.fr/it/map/valeggio_931673?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true')],
+                [InlineKeyboardButton("vigasio", url='http://umap.openstreetmap.fr/it/map/vigasio_931677?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true'),
+                 InlineKeyboardButton("villafranca", url='http://umap.openstreetmap.fr/it/map/villafranca_931678?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&captionMenus=true') ]]
 
     reply_markup = InlineKeyboardMarkup(keyboard)
 
@@ -52,6 +52,7 @@ async def setlocation(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 def main():
+    ordina_csv()
     app = ApplicationBuilder().token(TOKEN).build()
     app.add_handler(CommandHandler("help", help))
     app.add_handler(CommandHandler("setlocation", setlocation))
@@ -59,5 +60,4 @@ def main():
 
 
 if __name__ == '__main__':
-    ordina_csv()
     main()
