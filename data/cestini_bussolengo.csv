@@ -1,4 +1,4 @@
-id,amenity,xcoord,ycoord
+id,amenity,lon,lat
 node/10770542949,waste_basket,10.8874291,45.4708557
 node/10770542955,waste_basket,10.8867192,45.4709445
 node/10770542958,waste_basket,10.887065,45.4717488

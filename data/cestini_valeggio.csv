@@ -1,4 +1,4 @@
-id,amenity,barrier,recycling_type,waste,xcoord,ycoord
+id,amenity,barrier,recycling_type,waste,lon,lat
 way/762013001,recycling,fence,centre,,10.7295816475782,45.4017141341824
 node/2835350450,waste_basket,,,,10.732501,45.3550269
 node/2835350451,recycling,,container,,10.7325227,45.3550255

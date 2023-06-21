@@ -1,4 +1,4 @@
-id,amenity,name,recycling:batteries,recycling:cans,recycling:clothes,recycling:glass,recycling:glass_bottles,recycling:green_waste,recycling:medicine,recycling:medicines,recycling:paper,recycling:plastic,recycling:scrap_metal,recycling_type,xcoord,ycoord
+id,amenity,name,recycling:batteries,recycling:cans,recycling:clothes,recycling:glass,recycling:glass_bottles,recycling:green_waste,recycling:medicine,recycling:medicines,recycling:paper,recycling:plastic,recycling:scrap_metal,recycling_type,lon,lat
 node/2595098139,waste_basket,,,,,,,,,,,,,,10.8194206,45.3052886
 node/2595098140,waste_basket,,,,,,,,,,,,,,10.8196541,45.3052952
 node/2595530082,waste_basket,,,,,,,,,,,,,,10.8163165,45.3055478

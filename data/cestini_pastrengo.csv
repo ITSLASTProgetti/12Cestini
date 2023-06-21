@@ -1,3 +1,3 @@
-id,amenity,recycling_type,xcoord,ycoord
+id,amenity,recycling_type,lon,lat
 way/676060245,recycling,centre,10.7917947665099,45.488603757432
 node/10184443537,waste_basket,,10.7959545,45.5057008

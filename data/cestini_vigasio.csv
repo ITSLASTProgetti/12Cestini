@@ -1,3 +1,3 @@
-id,amenity,collection_times,name,recycling_type,xcoord,ycoord
+id,amenity,collection_times,name,recycling_type,lon,lat
 way/490685409,recycling,Martedì pomeriggio e Sabato mattina,Isola ecologica,container,10.9325551319843,45.3084823360538
 node/7523366851,waste_basket,,,,10.9254617,45.3451104
