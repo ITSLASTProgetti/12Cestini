@@ -1,0 +1,5 @@
+,id,lon,lat,recycling:glass,recycling:plastic,recycling:paper
+5,node/4230021523,10.6998395,45.4553204,yes,yes,
+6,node/4230021528,10.7019355,45.4566346,yes,yes,
+5,node/1815639223,10.7340591,45.4997482,yes,yes,yes
+0,way/204509620,10.8007068582639,45.3263958489814,yes,yes,yes
