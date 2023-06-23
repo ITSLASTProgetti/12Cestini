@@ -100,7 +100,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
 
 
 def scorri_csv(lat,lon):
-    percorso = r"C:\Users\PC\OneDrive\Documenti\GitHub\12Cestini\data\datiCestino.csv"
+    percorso = r"C:\Users\PC\OneDrive\Documenti\GitHub\12Cestini\data\datiCestino.csv"  #cambiare a seconda di dove si trova il file datiCestino.csv
     percorso = percorso.replace("\\", "/")
 
     cestini = pd.read_csv(percorso)
