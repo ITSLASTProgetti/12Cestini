@@ -2,6 +2,9 @@ import pandas as pd
 from telegram import Update
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, CallbackContext
+from telegram import ForceReply, Chat
+from telegram.ext import Application, MessageHandler, filters
+from math import radians, sin, cos, asin, sqrt, atan2
 
 
 with open("token.txt", "r") as f:
@@ -36,6 +39,8 @@ def ordina_csv():
 async def help(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await update.message.reply_text("""Comandi disponibili:
+
+    CONDIVIDI LA POSIZIONE per trovare il cestino più vicino a te
     /setlocation: metti il paese da dove vuoi cercare
     /mapbins: porta alla mappa di tutti i cestini
     /maptype: metti il tipo del cestino da cercare
@@ -77,6 +82,60 @@ async def maptype(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await update.message.reply_text('Schiaccia il bottone:', reply_markup=reply_markup)
 
+
+async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    message = update.message
+    text = update.message.text
+    id = update.message.chat.id
+
+    if update.message.location:
+        lat = message.location.latitude
+        lon = message.location.longitude
+        risultato = scorri_csv(lat, lon)
+
+        await update.message.reply_venue(risultato[1], risultato[0], 'NomeOggetto', 'NomeVia?')
+
+    else:
+        await update.message.reply_text('Mandami una posizione')
+
+
+def scorri_csv(lat,lon):
+    percorso = r"C:\Users\PC\OneDrive\Documenti\GitHub\12Cestini\data\datiCestino.csv"
+    percorso = percorso.replace("\\", "/")
+
+    cestini = pd.read_csv(percorso)
+
+    lista_lat_lon = cestini.iloc[:][['lon','lat']]
+    distanzaMinima = 10**10
+
+    for row in range(len(lista_lat_lon)):
+        lat_cestino = lista_lat_lon.iloc[row]['lon']
+        lon_cestino = lista_lat_lon.iloc[row]['lat']
+
+        distanza_cestino = distanza(lat, lon, lat_cestino, lon_cestino)
+
+        if (distanza_cestino < distanzaMinima):
+            distanzaMinima = distanza_cestino
+            lat_minimo = lat_cestino
+            lon_minimo = lon_cestino
+
+    return(lat_minimo, lon_minimo, distanzaMinima)
+
+
+def distanza(lat1,lon1, lat2, lon2):
+    lon1 = radians(lon1)
+    lon2 = radians(lon2)
+    lat1 = radians(lat1)
+    lat2 = radians(lat2)
+    dlon = lon2 - lon1
+    dlat = lat2 - lat1
+    a = sin(dlat / 2)**2 + cos(lat1) * cos(lat2) * sin(dlon / 2)**2
+    # c = 2 * m.asin(m.sqrt(a))
+    c = 2 * atan2(sqrt(a), sqrt(1 - a))
+    r = 6371
+    return((c * r)) #*1000
+
+
 def main():
     #ordina_csv()
     app = ApplicationBuilder().token(TOKEN).build()
@@ -84,6 +143,7 @@ def main():
     app.add_handler(CommandHandler("setlocation", setlocation))
     app.add_handler(CommandHandler("mapbins", mapbins))
     app.add_handler(CommandHandler("maptype", maptype))
+    app.add_handler(MessageHandler(filters.LOCATION, handle_message))
     app.run_polling()
 
 
