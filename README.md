@@ -75,3 +75,19 @@ fare un bot telegram con le seguenti funzionalità:
 | scrivere su telegra la posizione del cestino più vicino | 30 min |google, python ||
 
 #
+
+
+### **requisiti**
+installare su terminale:
+
+    python -m pip install python-telegram-bot
+
+e
+
+    python -m pip install pandas
+
+cambiare il percorso della stringa di codice della funzione scorri_csv(lat, lon) a seconda di dove si trova il file datiCestini.csv es:
+
+    percorso = r"C:\Users\PC\OneDrive\Documenti\GitHub\12Cestini\data\datiCestino.csv"
+
+#
