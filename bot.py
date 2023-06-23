@@ -40,10 +40,10 @@ async def help(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await update.message.reply_text("""Comandi disponibili:
 
-    CONDIVIDI LA POSIZIONE per trovare il cestino più vicino a te
-    /setlocation: metti il paese da dove vuoi cercare
-    /mapbins: porta alla mappa di tutti i cestini
-    /maptype: metti il tipo del cestino da cercare
+    comando per vedere la mappa di un paese: /setlocation
+    comando per vedere la mappa di tutti i cestini: /mapbins
+    comando per vedere la mappa dei cestini per tipo: /maptype: 
+    CONDIVIDI LA POSIZIONE per trovare il cestino più vicino a te: USA LA GRAFFETTA
     """)
 
 
@@ -112,7 +112,7 @@ def scorri_csv(lat,lon):
         lat_cestino = lista_lat_lon.iloc[row]['lon']
         lon_cestino = lista_lat_lon.iloc[row]['lat']
 
-        distanza_cestino = distanza(lat, lon, lat_cestino, lon_cestino)
+        distanza_cestino = distanza(lat, lon, lon_cestino, lat_cestino)
 
         if (distanza_cestino < distanzaMinima):
             distanzaMinima = distanza_cestino
@@ -136,9 +136,16 @@ def distanza(lat1,lon1, lat2, lon2):
     return((c * r)) #*1000
 
 
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    await update.message.reply_text("""Comandi disponibili:
+    /help: per visualizzare i comandi
+    """)
+
+
 def main():
     #ordina_csv()
     app = ApplicationBuilder().token(TOKEN).build()
+    app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("help", help))
     app.add_handler(CommandHandler("setlocation", setlocation))
     app.add_handler(CommandHandler("mapbins", mapbins))
